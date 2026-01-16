@@ -3,3 +3,5 @@ Data/
 models/
 __pycache__/
 Visualisation/
+results/
+notes.txt

@@ -1,3 +1,33 @@
- * White square injection:
+======================================================================
+White square injection
+======================================================================
 In the 5-layer CNN Attack Success Rate (ASR): 87.60%
 (related images: "CNN1" and "Fig2")
+
+======================================================================
+FORWARD SUBSTITUTION RESULTS (most to least critical layers)
+======================================================================
+conv1.weight    : ΔBSR =   4.77% - ASR after substitution: 83.17%
+conv1.bias      : ΔBSR =   0.96% - ASR after substitution: 86.98%
+fc1.weight      : ΔBSR =  75.33% - ASR after substitution: 12.61%   ***
+fc1.bias        : ΔBSR =  -0.03% - ASR after substitution: 87.97%
+conv2.weight    : ΔBSR =  28.99% - ASR after substitution: 58.95%   **
+conv2.bias      : ΔBSR =   0.09% - ASR after substitution: 87.85%
+fc2.weight      : ΔBSR =  12.51% - ASR after substitution: 75.43%   *
+fc2.bias        : ΔBSR =  -0.06% - ASR after substitution: 88.00%
+
+Top 3 most critical layers:
+  • fc1.weight → ΔBSR = 75.33%
+  • conv2.weight → ΔBSR = 28.99%
+  • fc2.weight → ΔBSR = 12.51%
+
+======================================================================
+Backward Substitution Analysis
+======================================================================
+Original malicious ASR: 87.94%
+Target threshold: 83.54%
+
+Minimal BC layers (L*):
+['fc1.weight', 'conv2.weight', 'fc2.weight', 'conv1.weight']
+Final recovered ASR: 86.95%
+Recovery ratio: 98.9%

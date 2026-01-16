@@ -60,13 +60,12 @@ def compute_asr(model, dataset, target_class, num_samples=1000, trigger_size=5, 
 
     return 100.0 * success / total
 
-# Choose some sample indices
+# sample indices
 sample_indices = np.random.choice(len(test_set), 10, replace=False)
 
-# Optional: choose which ones to poison
 poison_indices = [0, 1, 2]  # first 3 will be poisoned
 trigger_size = 5
-target_class = 6  # same as your training target
+target_class = 6 
 
 plt.figure(figsize=(15,5))
 for i, idx in enumerate(sample_indices):
