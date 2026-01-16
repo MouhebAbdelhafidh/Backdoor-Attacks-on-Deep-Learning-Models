@@ -1,0 +1,3 @@
+ * White square injection:
+In the 5-layer CNN Attack Success Rate (ASR): 87.60%
+(related images: "CNN1" and "Fig2")
