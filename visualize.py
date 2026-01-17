@@ -34,7 +34,7 @@ def imshow(img, title=None):
 # Load a trained model
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model = SimpleCNN()
-model.load_state_dict(torch.load('models/lp_top3_model.pth', map_location=device))
+model.load_state_dict(torch.load('models/forced_activate_top10_neurons.pth', map_location=device))
 model.to(device)
 model.eval()
 
