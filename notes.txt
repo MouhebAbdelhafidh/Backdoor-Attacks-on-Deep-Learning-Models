@@ -40,3 +40,24 @@ ASR: 81.57%
 Update norm (full): 6.429405
 Update norm (LP):   3.972456
 Reduction: 1.62x
+
+======================================================================
+Neuron Masking Test (Top 10)
+======================================================================
+Baseline ASR: 81.57%
+Baseline clean acc: 73.96%
+Masked ASR: 58.81%
+Masked clean acc: 74.52%
+ASR drop: 22.76%
+
+======================================================================
+Force-Activation Test (Top 10 Neurons)
+======================================================================
+Baseline target class rate: 11.89%
+Baseline clean acc: 73.96%
+Temporary forced target class rate: 78.08%
+Temporary forced clean acc: 28.83%
+Permanent modified target class rate: 57.70%
+Permanent modified clean acc: 41.27%
+Target class increase (temporary): 66.19%
+Attack Success Rate (ASR): 99.60%

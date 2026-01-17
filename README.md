@@ -1,6 +1,4 @@
-# Backdoor-Attacks-on-Deep-Learning-Models
-Research-oriented exploration of deep learning model security, focusing on backdoor attacks, threat models and attack injection.
+# Reproducing and Extending Backdoor-Critical Layer Identification
 
-# Steps:
-## 1. On simple CNN (5 layers)
-Attack Success Rate (ASR): 87.94%
+**Full Survey Paper (LinkedIn Post):**  
+[Study on Layer-wise Poisoning and Neuron Responsibility](https://www.linkedin.com/posts/moheb-abdelhafidh-978282236_study-on-layer-wise-poisoning-and-neuron-activity-7418351700282855426-BaMF?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrF0uwBRiktbRJLbANocb8aKChy65QwuWI)
